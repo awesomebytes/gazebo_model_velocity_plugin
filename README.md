@@ -7,7 +7,18 @@ A plugin that does the same (but all together) than:
 
 
 # Try it
+You can just do
+```bash
+roslaunch gazebo_model_velocity_plugin boxbot_example.launch
+```
 
+Then you can command the robot around with
+```bash
+rosrun rqt_robot_steering rqt_robot_steering
+```
+(Even though, the robot can also move in the Y axis, and that GUI doesn't allow that).
+
+You can check the odometry topic `/boxbot/odom` and the actual velocity sent to gazebo in `/boxbot/output_vel`.
 
 # Config
 Looks like:
